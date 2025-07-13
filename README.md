@@ -1,7 +1,7 @@
 # Rick & Morty App · Prueba Técnica Flat101
 
 Esta aplicación muestra información de episodios y localizaciones de la serie **Rick & Morty** usando la [Rick and Morty API](https://rickandmortyapi.com/).  
-Desarrollada como prueba técnica con **Next.js 14** (App Router), **TypeScript** y **Tailwind CSS**.
+Desarrollada como prueba técnica con **Next.js 15** (App Router), **TypeScript** y **Tailwind CSS**.
 
 ## Funcionalidades principales
 
