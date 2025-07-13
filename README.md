@@ -17,6 +17,7 @@ Desarrollada como prueba técnica con **Next.js 14** (App Router), **TypeScript*
 
 - **Node.js** v18 o superior
 - **npm** v9 o superior
+- **Next.js** v15 o superior
 
 ## Instalación y uso
 

@@ -21,7 +21,6 @@ export default function Header() {
   useEffect(() => {
     setSearch("");
   }, [pathname, page, setSearch]);
-
   if (
     pathname.startsWith("/episodes/detail") ||
     pathname.startsWith("/locations/detail")

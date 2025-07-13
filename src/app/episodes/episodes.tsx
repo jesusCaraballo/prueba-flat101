@@ -42,7 +42,7 @@ export default function Episodes() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto pt-6">
+    <section className="max-w-2xl mx-auto pt-4 px-6 pb-8">
       <ul className="divide-y divide-gray-200">
         {loading ? (
           <li className="text-center py-8 text-violet-500 font-medium">
@@ -73,22 +73,24 @@ export default function Episodes() {
           </li>
         )}
       </ul>
-      <div className="flex justify-center mt-8 gap-2">
+      <ul className="flex justify-center gap-2 mt-8 mb-8">
         {[...Array(pages)].map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goToPage(i + 1)}
-            className={`px-3 py-1 rounded border font-semibold ${
-              page === i + 1
-                ? "bg-violet-600 text-white border-violet-600"
-                : "bg-white text-violet-700 border-violet-200 hover:bg-violet-100"
-            } transition-colors duration-200`}
-            disabled={page === i + 1}
-          >
-            {i + 1}
-          </button>
+          <li key={i}>
+            <button
+              onClick={() => goToPage(i + 1)}
+              className={`px-3 py-1 rounded border font-semibold ${
+                page === i + 1
+                  ? "bg-violet-600 text-white border-violet-600"
+                  : "bg-white text-violet-700 border-violet-200 hover:bg-violet-100"
+              } transition-colors duration-200`}
+              disabled={page === i + 1}
+              aria-current={page === i + 1 ? "page" : undefined}
+            >
+              {i + 1}
+            </button>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
